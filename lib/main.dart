@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       //home: LoginView(), //( Font, bold in-button texts)
       //home: pet_det1(), //(back arrow, centre top text, correct first bar, correct second bar, move button to the right, change button text to white)
       //home: pet_det2(),//( divide 생일 part into 3 circles, change the backgrounds for the inputs to white, move the 다음 button to the right and change the background colour to white, back arrow too)
-      //home: vaccination(), // (centre contents, move button to the right and change text colour to white, back arrow)
+      home: vaccination(), // (centre contents, back arrow)
     );
   }
 }
