@@ -24,7 +24,7 @@ class _LoginViewState extends State<LoginView> {
                   color: Colors.black,
                 ),
               ),
-              SizedBox(height: 16.0),
+              SizedBox(height: 17.0),
               Text(
                 '반려동물을 위한 가장 소중한 만남\n반려동물 교배 매칭 플랫폼',
                 textAlign: TextAlign.center,
