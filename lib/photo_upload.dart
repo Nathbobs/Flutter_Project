@@ -11,7 +11,7 @@ class _photoUploadState extends State<photoUpload> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pink[100],
+      backgroundColor: Color(0xFFFFD9E5),
       appBar: AppBar(
         leading: IconButton(
         icon: Icon(Icons.arrow_back),
@@ -27,13 +27,24 @@ class _photoUploadState extends State<photoUpload> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              backgroundColor: Colors.white,
-              radius: 80,
-              child: Icon(
-                Icons.upload,
-                color: Colors.grey[400],
-                size: 60,
+            Container(
+              width: 215.0, // specify your desired width
+              height: 215.0, // specify your desired height
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Color(0xFFFDC1D3), // specify your desired border color
+                  width: 5.0, // specify your desired border width
+                ),
+              ),
+              child: CircleAvatar(
+                backgroundColor: Colors.grey[350],
+                radius: 105, // radius should be half of the container's width and height
+                child: Icon(
+                  Icons.upload,
+                  color: Colors.white,
+                  size: 90,
+                ),
               ),
             ),
             SizedBox(height: 16),
@@ -42,7 +53,7 @@ class _photoUploadState extends State<photoUpload> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.grey[800],
+                color: Colors.black,
               ),
             ),
           ],
